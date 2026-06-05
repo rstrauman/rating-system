@@ -1,10 +1,10 @@
 import { FaStar } from 'react-icons/fa'; 
 
-function Star() {
+function Star(props) {
     return (
-        <p>
+        <div className='star' onClick={props.onClick}>
             <FaStar/>
-        </p>
+        </div>
     );
 }
 

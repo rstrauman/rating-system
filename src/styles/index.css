@@ -17,11 +17,20 @@ section {
     gap: 10px;
 }
 
-p {
+.un-clicked{
     color: #ffffff;
     font-size: 24px;
+    transition: all 0.25s ease-in-out;
 }
 
-p:hover {
+.un-clicked:hover {
+    color: #868686;
+    transform: scale(1.1);
+    cursor: pointer;
+}
 
+.clicked {
+    color: gold;
+    font-size: 24px;
+    transition: all 0.25s ease-in-out;
 }
