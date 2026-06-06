@@ -29,7 +29,6 @@ function StarRating(props) {
             ))}
             </div>
             <h2>{getText()}</h2>
-            <button>Open Dialog</button>
         </section>
     );
 }

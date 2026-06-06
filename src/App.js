@@ -7,6 +7,7 @@ function App() {
 	return (
 		<div className="container stars-container">
 			<StarRating stars={stars}/>
+			<button>Open Dialog</button>
 		</div>
 	);
 }
