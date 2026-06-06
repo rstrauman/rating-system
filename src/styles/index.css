@@ -55,7 +55,7 @@ h2 {
     font-size: 16px;
 }
 
-button {
+.open-btn {
     position: absolute;
     bottom: 10px;
     right: 10px;
@@ -69,8 +69,16 @@ button {
     transition: all 0.25s ease-in-out;
 }
 
-button:hover {
+.close-btn:hover {
     transform: scale(1.1);
     color:rgb(0, 128, 255);
     background-color: #fff;
+}
+
+.open {
+    visibility: visible;
+}
+
+.close {
+    visibility: hidden;
 }
