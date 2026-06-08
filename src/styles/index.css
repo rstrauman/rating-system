@@ -69,16 +69,61 @@ h2 {
     transition: all 0.25s ease-in-out;
 }
 
-.close-btn:hover {
+.open-btn:hover {
     transform: scale(1.1);
     color:rgb(0, 128, 255);
     background-color: #fff;
 }
 
+.open, .close {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .open {
     visibility: visible;
+    background-color: #343434;
+    width: 200px; 
+    height: 100px;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    border-radius: 5px;
 }
 
 .close {
+    visibility: hidden;
+    display: none;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: red;
+    background-color: transparent;
+    transition: all 0.25s ease-in-out;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.close-btn:hover {
+    transform: scale(1.2);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.333); 
+    width: 100vw;
+    height: 100svh;
+    z-index: 1;
+}
+
+.close-overlay {
     visibility: hidden;
 }
